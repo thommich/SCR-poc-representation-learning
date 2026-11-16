@@ -1,0 +1,44 @@
+{
+  "source_mode": "assumed_consultation",
+  "spine": {
+    "table": "REPLACE_DB.REPLACE_FROZEN_APPLICATION_SPINE",
+    "application_id": "REPLACE_APPLICATION_ID",
+    "person_id": "REPLACE_PERSON_ID",
+    "application_time": "REPLACE_APPLICATION_TIME",
+    "product": "REPLACE_PRODUCT",
+    "split": "REPLACE_SPLIT",
+    "target": "REPLACE_PRODUCT_SPECIFIC_TARGET",
+    "target_provenance": "REPLACE_TARGET_PROVENANCE",
+    "customer_status": "REPLACE_CUSTOMER_STATUS"
+  },
+  "snapshot": {
+    "table": "REPLACE_DB.REPLACE_CERTIFIED_SCR_SNAPSHOT_VIEW",
+    "person_id": "REPLACE_PERSON_ID",
+    "reference_month": "REPLACE_YYYYMM",
+    "event_id": "REPLACE_EVENT_ID",
+    "available_at": "REPLACE_BANK_AVAILABLE_TIMESTAMP",
+    "replaced_at": "REPLACE_REPLACED_TIMESTAMP",
+    "status": "REPLACE_REPORT_STATUS",
+    "partition": "REPLACE_SOURCE_ANOMESDIA",
+    "acquisition": "REPLACE_SOURCE_ACQUISITION",
+    "protocol": "REPLACE_SOURCE_PROTOCOL",
+    "consultation_raw": "REPLACE_SOURCE_CONSULTATION_STRING"
+  },
+  "authorization": {
+    "table": "REPLACE_DB.REPLACE_AUTHORIZATION_INTERVAL_VIEW",
+    "person_id": "REPLACE_PERSON_ID",
+    "valid_from": "REPLACE_AUTH_VALID_FROM",
+    "valid_to": "REPLACE_AUTH_VALID_TO",
+    "permitted_use": "REPLACE_PERMITTED_USE_BOOLEAN"
+  },
+  "certification": {
+    "snapshot_ledger_complete": false,
+    "authorization_ledger_complete": false,
+    "source_snapshot_join_audited": false
+  },
+  "application_months": ["REPLACE_MONTH_1", "REPLACE_MONTH_2", "REPLACE_MONTH_3", "REPLACE_MONTH_4", "REPLACE_MONTH_5", "REPLACE_MONTH_6", "REPLACE_MONTH_7", "REPLACE_MONTH_8"],
+  "source_partitions": ["REPLACE_VERIFIED_ANOMESDIA"],
+  "source_origin": "REPLACE_VERIFIED_ORIGIN_CODE",
+  "history_months": 12,
+  "minimum_history_months": 2
+}
